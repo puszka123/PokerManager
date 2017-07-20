@@ -1,0 +1,39 @@
+package models;
+
+public class PlayerRoundData
+{
+	private float money;
+	private boolean pass;
+	private boolean win;
+	
+	public float getMoney()
+	{
+		return money;
+	}
+	
+	public void setMoney(float money)
+	{
+		this.money = money;
+	}
+	
+	public boolean getPass()
+	{
+		return pass;
+	}
+	
+	public void setPass(boolean pass)
+	{
+		this.pass = pass;
+	}
+	
+	public float getWin()
+	{
+		return win;
+	}
+	
+	public void setWin(boolean win)
+	{
+		this.win = win;
+	}
+	
+}

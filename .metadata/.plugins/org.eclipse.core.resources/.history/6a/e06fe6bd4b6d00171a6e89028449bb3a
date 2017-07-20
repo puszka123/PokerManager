@@ -1,0 +1,7 @@
+package models;
+
+public class PlayerRoundData
+{
+	private float money;
+	private boolean win;
+}

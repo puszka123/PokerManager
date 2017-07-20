@@ -14,9 +14,14 @@
         <h1>About</h1>
         <p>
           Easy way to manage your money in a poker game!
+        </p>
+       	<p>
           You can concentrate on match and you don't have to worry about writing data
+		</p>
+		<p>
           You can save your game and start it whenever you want!
         </p>
+        
       </div>
 
 

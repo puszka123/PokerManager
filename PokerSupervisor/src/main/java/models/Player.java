@@ -5,7 +5,6 @@ public class Player
 	private String name;
 	private float money;
 	
-	
 	public String getName() {
 		return name;
 	}

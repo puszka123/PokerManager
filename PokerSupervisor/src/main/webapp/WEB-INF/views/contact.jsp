@@ -12,9 +12,9 @@
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron">
         <h1>Contact</h1>
-        <p>
-          piotrpuszk@gmail.com
-        </p>
+        <address>
+		    <strong>developer:</strong> <a href="mailto:piotr.puszkarski@gmail.com">piotrpuszk@gmail.com</a><br />
+		</address>
       </div>
 
 

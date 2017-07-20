@@ -1,0 +1,22 @@
+package models;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Round
+{
+	private Game game;
+	private int numberOfRound;
+	private List<PlayerRoundData> playersData;
+	
+	public Round()
+	{
+		playersData = new ArrayList<>();
+		for(int i=0; i < game.getPlayers().size(); i++)
+		{			
+			playersData.add(new PlayerRoundData());
+		}
+		
+	}
+	
+}

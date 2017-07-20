@@ -2,5 +2,47 @@ package models;
 
 public class Result 
 {
+	private Game game;
+	private ResultData resultData;
+	
+	public void calculateResult()
+	{
+		resultData = new ResultData(game.getPlayers().size());
+		float[] results = resultData.getResults();
+		float[] money = new float[game.getPlayers().size()];
+		int winner = -1;
+		for(Round round : game.getRounds())
+		{
+			int index = 0;
+			for(PlayerRoundData playerData : round.getPlayersData())
+			{
+				if(playerData.isWin()) winner = index;
+				money[index++] += playerData.getMoney();
+			}
+		}
+		if(winner == -1) System.out.println("Winner == -1 !!!");
+		for(int i=0; i < game.getPlayers().size();i++)
+		{
+			if(i == winner) results[i] = 0;
+			else results[i] = money[i];
+		}
+		resultData.setResults(results);
+	}
+	
+	public ResultData getResultData() {
+		return resultData;
+	}
+
+	public void setResultData(ResultData resultData) {
+		this.resultData = resultData;
+	}
+
+	public Game getGame() {
+		return game;
+	}
+
+	public void setGame(Game game) {
+		this.game = game;
+	}
 	
 }

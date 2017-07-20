@@ -1,0 +1,38 @@
+package models;
+
+public class Result 
+{
+	private Game game;
+	private ResultData resultData;
+	
+	public void calculateResult()
+	{
+		resultData = new ResultData(game.getPlayers().size());
+		float[][] results = resultData.getResults();
+		float[] money = new float[game.getPlayers().size()];
+		for(Round round : game.getRounds())
+		{
+			for(int i=0; i < game.getPlayers().size(); i++)
+			{
+				
+			}
+		}
+	}
+	
+	public ResultData getResultData() {
+		return resultData;
+	}
+
+	public void setResultData(ResultData resultData) {
+		this.resultData = resultData;
+	}
+
+	public Game getGame() {
+		return game;
+	}
+
+	public void setGame(Game game) {
+		this.game = game;
+	}
+	
+}

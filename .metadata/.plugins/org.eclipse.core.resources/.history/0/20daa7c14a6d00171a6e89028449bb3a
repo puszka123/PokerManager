@@ -1,0 +1,17 @@
+package models;
+
+public class Result 
+{
+	private Game game;
+	private ResultData resultData;
+	
+	
+	public Game getGame() {
+		return game;
+	}
+
+	public void setGame(Game game) {
+		this.game = game;
+	}
+	
+}

@@ -1,0 +1,31 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>    
+<html>
+<head>
+	<title>Poker Supervisor</title>
+	<link href="webjars/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+ 	  <div>
+        <%@include file="navbar.jsp" %>
+ 	  </div>
+
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h1>Add players...</h1>
+        <form:form name="Enter user name" action="savePlayer" method="POST" modelAttribute="player">
+	    	<ul>
+		        <li><label>User:</label> <form:input path='name' /></li>
+		        <li><label>Money:</label> <form:input path='money' /></li>
+		        <li><label>&nbsp;</label> <input type="submit" value="APPLY" class="btn btn-lg btn-primary"></li>
+	    	</ul>
+		</form:form>
+      </div>
+
+
+<script src="webjars/jquery/2.1.1/jquery.min.js"></script>
+<script src="webjars/bootstrap/3.2.0/js/bootstrap.min.js"></script>   
+</body>
+</html>
+
